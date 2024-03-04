@@ -7,12 +7,72 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Foydalanuvchi qo'shish</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addform">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Ismi</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" name="firstname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail2" class="form-label">Familyasi</label>
+                                <input type="text" class="form-control" id="exampleInputEmail2"
+                                    aria-describedby="emailHelp" name="lastname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail3" class="form-label">Yoshi</label>
+                                <input type="number" class="form-control" id="exampleInputEmail3"
+                                    aria-describedby="emailHelp" name="age">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail4" class="form-label">Telefon</label>
+                                <input type="tel" class="form-control" id="exampleInputEmail4"
+                                    aria-describedby="emailHelp" name="tel">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Saqlash</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <h1>SO'ROVLAR BILAN ISHLASH</h1>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Qo'shish
+                </button>
+            </div>
+        </div>
+        <table class="table bordered">
+            <thead>
+                <tr>
+                    <th>Ismi</th>
+                    <th>Familyasi</th>
+                    <th>Yoshi</th>
+                    <th>Telefon raqami</th>
+                    <th>Uskunalar</th>
+                </tr>
+            </thead>
+            <tbody>
 
-    <div>
-        
+            </tbody>
+        </table>
     </div>
 
-
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>    
 </body>
 </html>
